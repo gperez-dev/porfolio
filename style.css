@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    /* Keyword values */
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+
+    /* Global values */
+    scroll-behavior: inherit;
+    scroll-behavior: initial;
+    scroll-behavior: revert;
+    scroll-behavior: revert-layer;
+    scroll-behavior: unset;
+
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.hero-section {
+    background-color: #DDDDDD;
+    height: 100vh;
+    display: flex;
+    position: sticky;
+    top: 0px;
+
+    flex-direction: row;
+}
+
+.hero-left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-heding-wrap {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-heading {
+    margin-bottom: 3px;
+}
+
+.heading-l {
+    color: #101010;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    font-weight: 400;
+}
+
+.heading-m {
+    color: #606060;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+.about-heding {
+    color: #404040;
+    font-size: 1.188rem;
+    line-height: 1.688rem;
+    font-weight: 300;
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.circle {
+    background-color: #0F0F0F;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    padding: 1em;
+    font-size: 0.25rem;
+    display: inline-block;
+
+    animation-name: color-loop;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes color-loop {
+    0%{background-color: #2EF04E;}
+    50%{background-color: #00B000;}
+    100%{background-color: #2EF04E;}
+}
+
+.cta-active {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #606060;
+    font-size: 0.813rem;
+    font-style: normal;
+    line-height: 1.125rem;
+}
+
+.icon-margin {
+    margin-left: 0px;
+    transition: margin-left 0.15s ease-out;
+}
+
+.cta-button:hover .icon-margin {
+    margin-left: 8px;
+}
+
+.cta-button {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px 12px 24px;
+    margin-top: 20px;
+    border-radius: 100px; 
+    background-color: #0F0F0F;
+    transition: background-color 0.2s ease-out;
+}
+
+.cta-button:hover {
+    background-color: #404040;
+}
+
+.hero-rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border-left: 0.5px #606060 solid;
+    padding: 5rem;
+}
+
+.working-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.working-on {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    
+}
+
+.working-list {
+    display: flex;
+    gap: 6px;
+    color: #101010;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.icon-head {
+    width: 0.75rem;
+    filter: invert();
+}
+
+.hero-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 23px;
+}
+
+p {
+    margin: 0;
+}
+
+.recomendation-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.recomendation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heading-s {
+    color: #404040;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.recomendation-list {
+    display: flex;
+    align-items: end;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #404040;
+    padding: 12px;
+    border: #C2C2C2 solid;
+    border-radius: 20px;
+    gap: 20px;
+    transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.recomendation-list:hover {
+    background-color: #d4d4d4;
+    border-color: #b5b5b5;
+}
+
+.recomendation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.recomendation-heading {
+    color: #404040;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.recomendation-img {
+    border-radius: 16px;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-section {
+    width: 100vw;
+    position: fixed;
+
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.nav-links {
+    padding: 20px 8px 20px 8px;
+    background-color: #CACACA;
+    border-radius: 100px;
+}
+
+.nav-link {
+    color: #0F0F0F;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 24px 12px 24px;
+    border-radius: 100px;    
+    background-color: #C2C2C2;
+    transition: background-color 0.2s ease-out;
+}
+
+.nav-link:not(.active):hover {
+    background-color: #b6b5b5;
+}
+
+.nav-link.active {
+    color: #F0F0F0;
+    background-color: #0F0F0F;
+}
+
+.second-wraper {
+    border-radius: 30px 30px 0 0;
+    position: sticky;
+    background-color: #0F0F0F;
+    top: 100vh;
+    color: #CACACA;
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+    height: 200vh;
+}
+
+.skill-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.stack-tools {
+    margin-left: 40px;
+    padding: 5rem;
+    width: 100%;
+}
+
+.skills-tec {
+    padding: 5rem;
+    width: 100%;
+}
+
+.stacks {
+    display: flex;
+    flex-direction: row;
+}
+
+.stack-list {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.stack-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.heading-tools {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+}
+
+.heading-tools-large {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.icon-tools {
+    border-radius: 8px;
+    width: 42px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-list {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
